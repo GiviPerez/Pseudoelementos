@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-element</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <head>
+
+    <header class="container uno">
+        <div class="row primero">
+            <div class=" col-xl-12 col-sm-12 col-md-12 medidas"><h1>Pseudoelemento</h1></div>
+        </div>
+
+    </header>
+
+
+
+    <section class="container dos">
+        <div class="row segundo">
+            <div class="col-xl-3 col-sm-12 col-md-6 after">
+                <p>::after (:after)</p>
+                <p>En CSS, ::after crea un pseudo-elemento que es el último hijo
+                     del elemento seleccionado. Es comunmente usado para añadir
+                      contenido cosmético a un elemento con la propiedad content.
+                      Es en linea (inline) de forma predeterminada.
+                    
+
+                      /* Añdade una flecha después de los enlaces */
+                      a::after {
+                        content: "→";
+                      }</p>
+            </div>
+            <div class="col-xl-3 col-sm-12 col-md-6 before">
+                <p>::before (:before)</p>
+                <p>En CSS, ::before crea un pseudoelemento que es el primer hijo del elemento
+                     seleccionado. Es usado normalmente para añadir contenido estético a un
+                      elemento, usando la propiedad content. Este elemento se muestra en línea
+                       con el texto de forma predeterminada.
+                    
+                       /* Añade un corazón antes de los enlaces */
+                       a::before {
+                         content: "♥";
+                       }</p>
+            </div>
+            <div class="col-xl-3 col-sm-12 col-md-6 firslett">
+                <p>::first-letter (:first-letter)</p>
+                <p>El pseudo-elemento ::first-letter aplica estilos a la primera letra de la primera línea un elemento de bloque,
+                     sólo cuando no es precedido de otro contenido (como imágenes o tablas).
+                     /* Selecciona la primera letra de <p> */
+                        p::first-letter {
+                          font-size: 130%;
+                        }
+                         </p>
+            </div>
+            <div class="col-xl-3 col-sm-12 col-md-6 fline">
+                <p>::first-line (:first-line)</p>
+                <p>El Pseudoelemento ::first-line aplica estilos a la primera línea de un elemento de bloque. Nótese que la longitud de la primera línea depende de muchos factores, incluyendo el ancho del elemento,
+                 el ancho del documento y el tamaño de fuente del texto.
+                 /* Selecciona la primera línea de un  */
+                    p::first-line {
+                      color: red;
+                    }
+                     </p>
+            </div>
+            <div class="col-xl-3 col-sm-12 col-md-6 selection">
+                <p>::selection</p>
+                <p>El selector ::selection CSS pseudo-elemento aplica reglas a una porción
+                     de un documento que ha sido destacado (por ejemplo: selección con el mouse
+                      o algún otro puntero en un dispositivo) del usuario.Ejemplo
+                      /* dibuja en cualquier texto seleccionado el color amarillo  sobre un fondo rojo */
+                      ::-moz-selection { color: gold;  background: red; }
+                      ::selection      { color: gold;  background: red; }
+                      
+                      /* dibuja el texto seleccionado en un parrafo de color blanco y negro*/
+                      p::-moz-selection { color: white;  background: black; }
+                      p::selection      { color: white;  background: black; }
+                      </p>
+            </div>
+            <div class="col-xl-3 col-sm-12 col-md-6 back">
+                <p>::backdrop </p>
+                <p> Cada uno de los elementos en la pila de la capa superior posee un ::backdrop
+                     pseudo-element. Este pseudo-elemento es una caja que se muestra 
+                     inmediatamente debajo del elemento (y sobre el elemento inmediatamente
+                      inferior de la pila, si es que hay), dentro de dicha capa superior. </p>
+            </div>
+            <div class="col-xl-3 col-sm-12 col-md-6 plac">
+                <p>::placeholder</p>
+                <p>El pseudo-elemento CSS ::placeholder representa el texto provisional
+                     (en-US) en un elemento input o un elemento textarea. </p>
+            </div>
+            <div class="col-xl-3 col-sm-12 col-md-6 marker">
+                <p>::marker </p>
+                <p> El pseudo-elemento ::marker en CSS selecciona la caja de marcadores de un elemento de la lista, que normalmente contiene una viñeta o un número. Funciona en cualquier elemento o pseudo-elemento configurado para display: list-item, como el elemento <li> y <summary> (en-US). </p>
+            </div>
+            <div class="col-xl-3 col-sm-12 col-md-6 spe">
+                <p>::spelling-error</p>  
+                <p>El pseudo-elemento CSS ::spelling-error representa un segmento de texto que el user agent (en-US) ha marcado como deletreado incorrectamente.
+                    ::spelling-error {
+                        color: red;
+                      }
+                       </p>
+            </div>
+            <div class="col-xl-3 col-sm-12 col-md-6 gram">
+                <p>::grammar-error </p>  
+                <p>The ::grammar-error CSS pseudo-element represents a text segment which the user agent has flagged as grammatically incorrect.
+                    ::grammar-error {
+                        /* ... */
+                      } </p>
+                      
+             </div> 
+             <div class="col-xl-3 col-sm-12 col-md-6 spe">
+                  
+                <img src="images/gato.jfif" alt="">
+            </div>  
+           
+                         
+               
+                       
+           
+        
+        </div>
+           
+            
+            
+            
+            
+
+    </section>
+            
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ <script src="js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>

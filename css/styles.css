@@ -1,0 +1,217 @@
+* {
+ box-sizing: border-box;   
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color:royalblue;
+   background-image: url(/images/cod.gif);
+}
+.uno{
+    height: 4rem;
+    width: 100%;
+    background-color: blue;
+    display: flexs;
+}
+.primero{
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    background-color:royalblue;
+}
+.medidas{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.dos{
+   height: auto;
+    width: 100%;
+    display: flex;
+    
+ 
+}
+.segundo{
+    height:auto;
+    width: 100%;
+    display: flex;
+    
+}
+.after{
+    display: flex;
+     height: auto;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.after p:first-child{
+    font-size: 150%;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    color: blueviolet;
+
+}
+.before{
+    display: flex;
+     height: auto;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.before p:first-child{
+    font-size: 150%;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    color: blue;
+    
+}
+.firslett{
+    display: flex;
+     height: auto;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.firslett p:first-child{
+    font-size: 150%;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    color: blue;
+    
+}
+.fline{
+    display: flex;
+     height: auto;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.fline p:first-child{
+    font-size: 150%;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    color: purple;
+    
+}
+.selection{
+    display: flex;
+     height: auto;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.selection p:first-child{
+    font-size: 150%;
+    justify-content: center;
+ 
+    flex-direction: column;
+    align-items: center;
+    color:plum
+    
+}
+.back{
+    display: flex;
+     height: auto;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.back p:first-child{
+    font-size: 150%;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    color:yellowgreen
+    
+}
+.plac{
+    display: flex;
+     height: auto;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.plac p:first-child{
+    font-size: 150%;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    color:darkred
+    
+}
+.marker{
+    display: flex;
+     height: auto;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.marker p:first-child{
+    font-size: 150%;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    color:tomato
+    
+}
+.spe{
+    display: flex;
+     height: auto;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.spe p:first-child{
+    font-size: 150%;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    color:tomato
+    
+}
+.gram{
+    display: flex;
+     height: auto;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.gram p:first-child{
+    font-size: 150%;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    color:tomato
+    
+}
+.containerdos{
+   
+    flex-direction: column;
+
+   
+}
+
